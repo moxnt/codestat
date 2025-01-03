@@ -22,6 +22,7 @@ fn main() {
 
 fn r_traverse_dir(path: &Path, stats: &mut HashMap<String, usize>) -> io::Result<()> {
     let entries = read_dir(path)?;
+    //let gitignore_path = path.to_path_buf().push(".gitignore/");
     for entry in entries {
         let path = entry?.path();
         if path.is_dir() {
@@ -52,10 +53,12 @@ fn handle_file(file_path: PathBuf, stats: &mut HashMap<String, usize>) {
 
     let line_count: usize = file.unwrap().lines().count();
 
-    if let Some(field) = stats.get_mut(extension) {
-        *field = *field + line_count;
-    } else {
-        stats.insert(extension.to_string(), line_count);
+    if line_count > 20 {
+        if let Some(field) = stats.get_mut(extension) {
+            *field = *field + line_count;
+        } else {
+            stats.insert(extension.to_string(), line_count);
+        }
     }
 }
 
