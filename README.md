@@ -18,6 +18,6 @@ A command line utility to view the most used programming languages in a project.
 
 ### Changes
 - [x] Colors
-- [] Skip directories and files that match `.gitignore`
-- [] Read metadata instead of lines
-- [] More custom colors for languages
+- [ ] Skip directories and files that match `.gitignore`
+- [ ] Read metadata instead of lines
+- [ ] More custom colors for languages
