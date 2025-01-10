@@ -5,7 +5,7 @@ A command line utility to view the most used programming languages in a project.
 > There are still some important improvements that need to be made. This utility does NOT check `.gitignore` so it will become very slow if it gets into a heavy directory (for example node_modules)
 
 *If it starts crawling the node modules directory it may sometimes read so much node_modules code, that it overpowers your own*
-![Output example for a website directory that contained a node_modules folder](./github/example1.png)
+![Output example for a website directory that contained a node_modules folder](./github/example2.png)
 
 ### Usage
 ```
@@ -13,7 +13,7 @@ A command line utility to view the most used programming languages in a project.
 ./codestat # By default it checks ./src (Realtive to current working directory)
 ./codestat ../app/src #.. also works
 ```
-![Output example for a website directory that contained only html+css sites](./github/example2.png)
+![Output example for a website directory that contained only html+css sites](./github/example1.png)
 
 ### Instalation
 1. Build from source
