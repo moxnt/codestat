@@ -327,7 +327,6 @@
   "jflex": "JFlex",
   "json": "JSON",
   "geojson": "JSON",
-  "lock": "JSON",
   "topojson": "JSON",
   "json5": "JSON5",
   "jsonld": "JSONLD",
